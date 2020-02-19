@@ -38,15 +38,15 @@
         </div>
     <?php endif ?>
     <div class="nav">
-        <div class="addpsot" style="width: 50%; float: left; height: 100%;">
-            <a href="addpost.php" class="add_post">Add Post</a>
+        <div class="addpsot" style="width: 50%; float: left; height: 100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <a href="addpost.php" class="add_post">ADD POST</a>
         </div>
         <!-- <a href="logout.php" class="add_post">Logout</a> -->
-        <div class="profile" style="width: 50%; float: left; height: 100%;">
-            <a href="profile.php" class="add_post">Profile</a>
+        <div class="profile" style="width: 50%; float: left; height: 100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+            <a href="profile.php" class="add_post">PROFILE</a>
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
     <div style="margin-bottom: 10px; margin-left: 100px;">
         <h3>Posts</h3>
     </div>

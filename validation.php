@@ -14,6 +14,7 @@
 
     #Checking if the name exists by checking the number of rows containing the username
     if ($num == 1) {
+        $_SESSION['username'] = $name;
         header('location: index.php');
     }else{
         header('location: login.php');
