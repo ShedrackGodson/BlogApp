@@ -51,7 +51,7 @@
         <h3>Posts</h3>
     </div>
     <?php foreach ($posts as $post): ?>
-        <div class="blog" style="margin: 15px auto;">
+        <div class="blog" style="margin: 15px auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
             <h4><?php echo $post["title"] ?></h4>
             <p><?php echo substr($post["body"],0,25) ?>....</p>
             <p>Created by: <span style="color: maroon"><?php echo $post["author"] ?></span> | On: <?php echo $post["date_created"] ?></p>

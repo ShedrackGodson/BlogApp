@@ -40,7 +40,7 @@
         <input type="text" name="author" required>
         <label>Body</label>
         <textarea name="body" id="" cols="30" rows="10" required></textarea>
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" name="submit" style="border-radius: 4px;">
     </form>
 </body>
 </html>
