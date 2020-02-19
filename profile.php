@@ -46,7 +46,6 @@ button:hover, a:hover {
 
 
 <div class="card">
-  <!-- <img src="../Desktop/IMC-BIT-18-96694/img/profile.jpeg" alt="John" style="width:100%"> -->
   <h1>John Doe</h1>
   <p class="title">CEO & Founder, Example</p>
   <p>Harvard University</p>

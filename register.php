@@ -7,6 +7,9 @@
     $name = $_POST['username'];
     $password = $_POST['password'];
     $r_password = $_POST['r_password'];
+    $options = array("cost"=>4);
+    $hashPassword = password_hash($password,PASSWORD_BCRYPT, $options);
+    $hashR_Password = password_hash($r_password,PASSWORD_BCRYPT, $options);
 
     $s = "SELECT * FROM users WHERE username='$name'";
     $result = mysqli_query($con,$s);

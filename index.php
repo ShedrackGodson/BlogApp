@@ -1,8 +1,8 @@
 <?php
     session_start();
-    // if (!isset($_SESSION['user'])) {
-    //     header('location: login.php');
-    // }
+    if (isset($_SESSION['user'])) {
+        header('location: login.php');
+    }
     require "config/db.php";
     
     // Custom query
@@ -37,16 +37,27 @@
             ?>
         </div>
     <?php endif ?>
-    <a href="addpost.php" class="add_post">Add Post</a>
-    <a href="logout.php" class="add_post">Logout</a>
-    <a href="profile.php" class="add_post">Profile</a>
+    <div class="nav">
+        <div class="addpsot" style="width: 50%; float: left; height: 100%;">
+            <a href="addpost.php" class="add_post">Add Post</a>
+        </div>
+        <!-- <a href="logout.php" class="add_post">Logout</a> -->
+        <div class="profile" style="width: 50%; float: left; height: 100%;">
+            <a href="profile.php" class="add_post">Profile</a>
+        </div>
+    </div>
+    <div class="container">
+    <div style="margin-bottom: 10px; margin-left: 100px;">
+        <h3>Posts</h3>
+    </div>
     <?php foreach ($posts as $post): ?>
-        <div class="container">
-            <h3><?php echo $post["title"] ?></h3>
+        <div class="blog" style="margin: 15px auto;">
+            <h4><?php echo $post["title"] ?></h4>
             <p><?php echo substr($post["body"],0,25) ?>....</p>
-            <p>Created by: <?php echo $post["author"] ?> | On: <?php echo $post["date_created"] ?></p>
+            <p>Created by: <span style="color: maroon"><?php echo $post["author"] ?></span> | On: <?php echo $post["date_created"] ?></p>
             <a href="post.php?id=<?php echo $post["id"] ?>">Read More</a>
         </div>
     <?php endforeach; ?>
+    </div>
 </body>
 </html>

@@ -72,3 +72,11 @@ input[type="submit"]{
 .form-control {
     background: transparent !important;
 }
+.blog {
+    margin: auto;
+    width: 70%;
+}
+.nav {
+    height: 50px;
+    margin-bottom: 20px;
+}
